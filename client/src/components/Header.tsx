@@ -6,7 +6,7 @@ import styled from "styled-components";
 const StyledGrid = styled(Grid)`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
     .header {
         display: flex;
@@ -34,8 +34,9 @@ export function Header({ darkMode, setDarkMode, user, setUser }: { darkMode: boo
         <StyledGrid container>
             <Grid item xs={3} />
             <Grid item xs={6} className='header'>
-                <Typography className='title'>BR - Private Law Teacher</Typography>
-                <Typography className='sub-title'>Online Courses</Typography>
+                <img width='400' src={`${darkMode ? '/white_logo.png' : 'black_logo.png'}`} />
+                {/* <Typography className='title'>BR - Private Law Teacher</Typography>
+                <Typography className='sub-title'>Online Courses</Typography> */}
             </Grid>
             <Grid item xs={3} className='actions'>
                 <Tooltip title='Change Mode'>
