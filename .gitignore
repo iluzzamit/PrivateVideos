@@ -1,0 +1,4 @@
+/dist
+/src/videos/*
+/node_modules
+.eslintrc.js
